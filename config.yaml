@@ -1,0 +1,39 @@
+
+# 从数据库加载的数据
+ori_data_path: a0_ori_data/phisingData.csv
+
+path:
+  # 本次训练所需数据
+  data_path: a1_out/Artifact_{today}/data.csv
+
+  # x_train_path: a1_out/Artifact_{today}/x_train.csv
+  # x_test_path: a1_out/Artifact_{today}/x_test.csv
+  # y_train_path: a1_out/Artifact_{today}/y_train.csv
+  # y_test_path: a1_out/Artifact_{today}/y_test.csv 
+
+  ROC_curve_path: a1_out/Artifact_{today}/ROC_curve_{today}.png
+  table_csv_path: a1_out/Artifact_{today}/table_{today}.csv
+  table_image_path: a1_out/Artifact_{today}/table_{today}.png
+
+  # 模型保存路径
+  model_path: a1_out/Artifact_{today}/model_{today}.pkl
+
+  # 上传哪个文件夹到云端
+  upload_path: a1_out/Artifact_{today}
+
+  # 下载到哪个文件夹
+  download_path: a2_local/Artifact_{today}
+
+  # 从哪个文件夹加载模型
+  local_path: a2_local
+  local_model_path: a2_local/Artifact_{today}/model_{today}.pkl
+
+# 用于计算roi
+roi:
+  a: 0.1 # 预测成本
+  b: 1.0 # 执行成本
+  c: 10.0 # 执行成功收益
+
+
+
+
